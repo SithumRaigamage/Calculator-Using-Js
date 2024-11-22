@@ -6,22 +6,22 @@ function input(value) {
   screenValue += value;
   userInput = screenValue; // Update the input expression
   document.getElementById("screen").innerText = screenValue;
-  document.getElementById("user-input").innerText = userInput; // Display user input in summary
+  document.getElementById("user-input").value = userInput; // Display user input in summary
 }
 
 function clearScreen() {
   screenValue = "0";
   userInput = "";
   document.getElementById("screen").innerText = screenValue;
-  document.getElementById("user-input").innerText = "0"; // Reset input display
-  document.getElementById("user-answer").innerText = "0"; // Reset answer display
+  document.getElementById("user-input").value = "0"; // Reset input display
+  document.getElementById("user-answer").value = "0"; // Reset answer display
 }
 
 function calculate() {
   try {
     screenValue = eval(screenValue).toString();
     document.getElementById("screen").innerText = screenValue;
-    document.getElementById("user-answer").innerText = screenValue; // Display the answer in summary
+    document.getElementById("user-answer").value = screenValue; // Display the answer in summary
   } catch (error) {
     screenValue = "Error";
     document.getElementById("screen").innerText = screenValue;

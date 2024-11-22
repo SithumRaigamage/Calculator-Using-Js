@@ -106,17 +106,18 @@ body {
 /* Summary section styling */
 .summary {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 20px;
     font-size: 1rem;
     margin-top: 10px;
     border-top: 1px solid #e0e0e0; /* Divider line */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    display: flex; 
 }
 
 /* Styling for input and output sections */
 .summary-input, .summary-output {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .summary-input h4, .summary-output h4 {
