@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mac Theme Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <link id="theme-link" rel="stylesheet" href="styles/andriod-theme.css">
 </head>
 <body>
   <div class="calculator">
@@ -33,6 +33,18 @@
       <button class="btn" onclick="calculate()">=</button>
       <button class="btn wide" onclick="input(0)">0</button>
       <button class="btn" onclick="input('.')">.</button>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <div class="summary-input">
+        <h4>Equation</h4>
+        <input type="text" id="user-input" value="0" disabled>
+      </div>
+      <div class="summary-output">
+        <h4>Result</h4>
+        <input type="text" id="user-answer" value="0" disabled>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>

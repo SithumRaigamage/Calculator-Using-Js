@@ -1,0 +1,160 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa; /* Light Material background */
+}
+
+/* Calculator container */
+.calculator {
+    width: 360px;
+    border-radius: 16px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Elevated card shadow */
+    overflow: hidden;
+}
+
+/* Header with Android-style buttons */
+.calculator-header {
+    display: flex;
+    padding: 12px;
+    background: #eeeeee; /* Light gray background */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculator-header div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.close {
+    background: #d32f2f; /* Material Red */
+}
+
+.minimize {
+    background: #fbc02d; /* Material Yellow */
+}
+
+.maximize {
+    background: #388e3c; /* Material Green */
+}
+
+/* Calculator screen */
+.calculator-screen {
+    background: #1e1e1e; /* Material dark screen */
+    color: #ffffff; /* Bright text */
+    font-size: 2.5rem; /* Larger text for Android style */
+    text-align: right;
+    padding: 10px;
+    height: 50px; /* Taller screen for spacing */
+    line-height: 1.5;
+    overflow-x: auto;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1); /* Subtle divider line */
+}
+
+/* Buttons container */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 12px;
+    padding: 20px;
+}
+
+/* Buttons styling */
+.btn {
+    background: #e0e0e0; /* Light Material background for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.3rem; /* Slightly larger text */
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); /* Subtle button shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:active {
+    transform: scale(0.97); /* Slight press effect */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #d6d6d6; /* Slightly darker hover effect */
+}
+
+/* Highlighted action button (e.g., equals) */
+.orange {
+    background: #f57c00; /* Vibrant Material Orange */
+    color: #ffffff;
+}
+
+.orange:active {
+    background: #e65100; /* Darker on press */
+}
+
+/* Wide button for "0" */
+.wide {
+    grid-column: span 2; /* Spans 2 columns */
+}
+
+/* Summary section styling */
+.summary {
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0; /* Divider line */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+}
+
+/* Styling for input and output sections */
+.summary-input, .summary-output {
+    margin-bottom: 15px;
+}
+
+.summary-input h4, .summary-output h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #757575; /* Material gray */
+    margin-bottom: 8px;
+}
+
+/* Input field styling */
+.summary input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa; /* Light input background */
+    color: #212121; /* Dark text */
+    text-align: right;
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: not-allowed; /* Disable interaction */
+}
+
+/* Optional: Input focus effect */
+.summary input:focus {
+    border-color: #0288d1; /* Material Blue */
+    outline: none;
+}
+
+/* Disabled input styling */
+#user-input, #user-answer {
+    background-color: #f5f5f5;
+    color: #424242; /* Darker gray for text */
+}
+
+/* Heading spacing */
+.summary h4 {
+    margin-bottom: 5px;
+}

@@ -90,4 +90,60 @@ body {
   .btn:hover {
     background: #e6e6e6;
   }
-  
+
+  /* Style the summary container */
+  .summary {
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-top: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style for the individual input and output sections */
+  .summary-input, .summary-output {
+    margin-bottom: 15px;
+  }
+
+  .summary-input h4, .summary-output h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  /* Style the input fields */
+  .summary input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: right;
+    box-sizing: border-box;
+    cursor: not-allowed; /* Prevent text selection */
+    font-weight: bold;
+  }
+
+  /* Add focus styling for input fields (optional, even if disabled) */
+  .summary input:focus {
+    border-color: #0078d4; /* Mac-style blue focus color */
+    outline: none;
+  }
+
+  /* Ensure disabled input fields look consistent */
+  #user-input, #user-answer {
+    background-color: #f1f1f1; /* Light gray for clarity */
+    color: #444;
+  }
+
+  /* Optional: Add spacing for better layout on smaller screens */
+  .summary h4 {
+    margin-bottom: 5px;
+  }
+
